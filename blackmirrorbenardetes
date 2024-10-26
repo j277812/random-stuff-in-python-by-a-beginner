@@ -51,7 +51,7 @@ def the_escapist(room_position, luck):
     if answer[0] == "y":
         if random() <= luck:
             print(celebrate_message[randint(0,3)])
-            luck *= 1
+            luck *= 0.97
             return room_position, luck
         else:
             print("You have been caught.\n")
